@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route('/predict/<clf>', methods = ['POST'])
 def predict_classifier(clf):
     #local solution
-    df = pd.read_json(r"test_data.json", orient="split") #PATHHHHH
+    df = pd.read_json(r"test_data.json", orient="split") # PATH
 
 
     clf = load("clf.joblib")

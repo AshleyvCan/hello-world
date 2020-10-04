@@ -9,7 +9,6 @@ def predict(df,clf):
 
     X_test = df
 
-
     # predict and put it in the right format
     pred = list(clf.predict(X_test))
     pred_dict= {'labels_pred': pred}
